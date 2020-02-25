@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Vision博客</title>
+  <title>Vue学习笔记 | Vision博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="南宁学院16级软件工程">
-<meta name="keywords" content="人工智能">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Vision博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="vue学习:  v-text 、v-html、v-on内容绑定，事件绑定 如果有html元素选择v-html，如果只是文本选择v-text、v-on绑定事件(可以写成@) 方法中使用this可以获取data中的数据">
+<meta name="keywords" content="学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue学习笔记">
+<meta property="og:url" content="http://yoursite.com/2020/02/25/Vue学习/index.html">
 <meta property="og:site_name" content="Vision博客">
-<meta property="og:description" content="南宁学院16级软件工程">
+<meta property="og:description" content="vue学习:  v-text 、v-html、v-on内容绑定，事件绑定 如果有html元素选择v-html，如果只是文本选择v-text、v-on绑定事件(可以写成@) 方法中使用this可以获取data中的数据">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-02-25T11:24:41.193Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vision博客">
-<meta name="twitter:description" content="南宁学院16级软件工程">
+<meta name="twitter:title" content="Vue学习笔记">
+<meta name="twitter:description" content="vue学习:  v-text 、v-html、v-on内容绑定，事件绑定 如果有html元素选择v-html，如果只是文本选择v-text、v-on绑定事件(可以写成@) 方法中使用this可以获取data中的数据">
   
     <link rel="alternative" href="/atom.xml" title="Vision博客" type="application/atom+xml">
   
@@ -158,98 +159,218 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Vue学习" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/22/凌晨3点不回家：成年人的世界是你想不到的心酸/" class="archive-article-date">
-  	<time datetime="2019-07-22T10:12:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/22/凌晨3点不回家：成年人的世界是你想不到的心酸/">凌晨3点不回家：成年人的世界是你想不到的心酸</a>
+    <h1 class="article-title" itemprop="name">
+      Vue学习笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/02/25/Vue学习/" class="archive-article-date">
+  	<time datetime="2020-02-25T04:19:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>vue学习:</p>
+<ol>
+<li>v-text 、v-html、v-on内容绑定，事件绑定</li>
+<li>如果有html元素选择v-html，如果只是文本选择v-text、v-on绑定事件(可以写成@)</li>
+<li>方法中使用this可以获取data中的数据<a id="more"></a></li>
+<li>v-show、 v-if 、 v-bind显示切换、属性绑定</li>
+<li>v-show根据真假切换元素的显示状态，原理是修改元素的display，操纵样式</li>
+<li>v-if根据真假切换元素的显示状态，原理是操纵dom元素</li>
+<li>频繁切换的元素用v-show,反之用v-if</li>
+<li>v-bind设置元素的属性（如src，title，class）</li>
+<li>V-for、v-on、 v-model列表绑定、表单元素绑定</li>
+<li>v-for根据数据生成列表结构，数组经常与v-for结合使用</li>
+<li>v-for语法：（item , index） in 数据 </li>
+<li>Item和index可以结合其他指令使用，是响应式的，即同步更新</li>
+<li>V-on补充:事件绑定的方法写成函数调用的形式，可以传入自定义参数，定义方法是需定义形参接收传入的实参。</li>
+<li>事件的后面跟上.修饰符 可以对事件进行限制 ，事件修饰符有很多 @keyup.enter在按下enter键后调用函数</li>
+<li>v-model 获取和设置表单元素（注意⚠️：是表单元素）的值（双向数据绑定，同步更新)</li>
+</ol>
+<p>Axios网络请求库</p>
+<ol>
+<li><script src="https://unpkg.com/axios/dist/axios.min.js”></script>//加入这个就可以使用axios了</li>
+<li>必须先导入再使用，使用get或post方法即可发送对应的请求，then方法中的回调函数会在请求成功或失败时调用相应的函数（第一个函数为成功时，第二个为失败时） 通过回调函数的形参可以获取相应内容，或错误信息</li>
+<li>Axios回调函数中的this已经改变，无法访问到data中的数据<br>如何解决无法访问data数据的问题：把this保存起来，回调函数中直接调用保存的this即可</li>
+<li>应用的逻辑大妈建议和页面分离。使用单独的js文件编写</li>
+<li>Axios回调函数中this指向改变了，需要额外的保存一份</li>
+<li>服务器返回的数据比较复杂时，获取的时候注意层级结构</li>
+<li>自定义参数可以让代码的复用性更高</li>
+<li>Methods中定义的方法内部，可以通过this关键字点出其他的方法</li>
+</ol>
+<p>实例<br>项目包地址<a href=" https: github.com itvisions study_vue">https://github.com/ITvisions/study_vue</a></p>
+<ol>
+<li>vue记事本<br><img src="https://github.com/ITvisions/blogimages/blob/master/vue%E8%AE%B0%E4%BA%8B%E6%9C%AC.png" alt="Image text"></li>
+<li>vue+axios天气查询<br><img src="https://github.com/ITvisions/blogimages/blob/master/vue%2Baxios%E5%A4%A9%E6%B0%94.png" alt="Image text"></li>
+</ol>
+</script></li></ol>
+      
+
+
+
+  <div class="declare" hidden="hidden"></div>
+
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢支持<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">好文分享</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/25/Vue学习/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/22/给自己点时间/" class="archive-article-date">
-  	<time datetime="2019-07-22T07:50:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/04/基于Flask的Python项目/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">基于Flask的Python项目</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/22/给自己点时间/">给自己点时间</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">自愈</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -275,8 +396,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
