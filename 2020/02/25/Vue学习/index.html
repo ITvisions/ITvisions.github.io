@@ -16,10 +16,13 @@
 <meta property="og:site_name" content="Vision博客">
 <meta property="og:description" content="vue学习:  v-text 、v-html、v-on内容绑定，事件绑定 如果有html元素选择v-html，如果只是文本选择v-text、v-on绑定事件(可以写成@) 方法中使用this可以获取data中的数据">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-02-25T13:21:54.000Z">
+<meta property="og:image" content="https://github.com/ITvisions/blogimages/blob/master/vue%E8%AE%B0%E4%BA%8B%E6%9C%AC.png">
+<meta property="og:image" content="https://github.com/ITvisions/blogimages/blob/master/vue%2Baxios%E5%A4%A9%E6%B0%94.png">
+<meta property="og:updated_time" content="2020-02-25T13:31:26.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue学习笔记">
 <meta name="twitter:description" content="vue学习:  v-text 、v-html、v-on内容绑定，事件绑定 如果有html元素选择v-html，如果只是文本选择v-text、v-on绑定事件(可以写成@) 方法中使用this可以获取data中的数据">
+<meta name="twitter:image" content="https://github.com/ITvisions/blogimages/blob/master/vue%E8%AE%B0%E4%BA%8B%E6%9C%AC.png">
   
     <link rel="alternative" href="/atom.xml" title="Vision博客" type="application/atom+xml">
   
@@ -195,11 +198,8 @@
 <li>Item和index可以结合其他指令使用，是响应式的，即同步更新</li>
 <li>V-on补充:事件绑定的方法写成函数调用的形式，可以传入自定义参数，定义方法是需定义形参接收传入的实参。</li>
 <li>事件的后面跟上.修饰符 可以对事件进行限制 ，事件修饰符有很多 @keyup.enter在按下enter键后调用函数</li>
-<li>v-model 获取和设置表单元素（注意⚠️：是表单元素）的值（双向数据绑定，同步更新)</li>
-</ol>
-<p>Axios网络请求库</p>
-<ol>
-<li><script src="https://unpkg.com/axios/dist/axios.min.js”></script>//加入这个就可以使用axios了</li>
+<li>v-model 获取和设置表单元素（注意⚠️：是表单元素）的值（双向数据绑定，同步更新)<br>Axios网络请求库</li>
+<li>在scripr的src属性中添加<a href="https://unpkg.com/axios/dist/axios.min.js”" target="_blank" rel="noopener">https://unpkg.com/axios/dist/axios.min.js”</a>，即可使用axios</li>
 <li>必须先导入再使用，使用get或post方法即可发送对应的请求，then方法中的回调函数会在请求成功或失败时调用相应的函数（第一个函数为成功时，第二个为失败时） 通过回调函数的形参可以获取相应内容，或错误信息</li>
 <li>Axios回调函数中的this已经改变，无法访问到data中的数据<br>如何解决无法访问data数据的问题：把this保存起来，回调函数中直接调用保存的this即可</li>
 <li>应用的逻辑大妈建议和页面分离。使用单独的js文件编写</li>
@@ -208,12 +208,12 @@
 <li>自定义参数可以让代码的复用性更高</li>
 <li>Methods中定义的方法内部，可以通过this关键字点出其他的方法</li>
 </ol>
-<p>实例<br>项目包地址<a href=" https: github.com itvisions study_vue">https://github.com/ITvisions/study_vue</a></p>
+<p>实例<br>项目包地址<a href="https://github.com/ITvisions/study_vue" target="_blank" rel="noopener">https://github.com/ITvisions/study_vue</a></p>
 <ol>
 <li>vue记事本<br><img src="https://github.com/ITvisions/blogimages/blob/master/vue%E8%AE%B0%E4%BA%8B%E6%9C%AC.png" alt="Image text"></li>
 <li>vue+axios天气查询<br><img src="https://github.com/ITvisions/blogimages/blob/master/vue%2Baxios%E5%A4%A9%E6%B0%94.png" alt="Image text"></li>
 </ol>
-</script></li></ol>
+
       
 
 
@@ -472,15 +472,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">自愈</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">好文分享</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">求职项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">自愈</a>
               </li>
             
             <div class="clearfix"></div>
